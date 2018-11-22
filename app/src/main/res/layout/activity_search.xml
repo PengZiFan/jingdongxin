@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.windows.ijingdong.SearchActivity">
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:paddingTop="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff00"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/et_black"
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="返回"/>
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_weight="10"
+            android:hint="京东超市  满99减50"
+            android:background="@drawable/radio_searchview"></EditText>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#ff00"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_12"
+            android:text="搜索" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_8"
+            android:textSize="@dimen/sp_10"
+            android:text="搜索历史"/>
+        <TextView
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"/>
+        <Button
+            android:id="@+id/btn_decrease"
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="清除历史记录" />
+    </LinearLayout>
+<com.example.windows.ijingdong.flowlayout.FlowLayout
+android:id="@+id/flow"
+    android:layout_marginTop="@dimen/dp_30"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"></com.example.windows.ijingdong.flowlayout.FlowLayout>
+</LinearLayout>

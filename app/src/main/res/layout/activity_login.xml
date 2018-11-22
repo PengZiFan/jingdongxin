@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.windows.ijingdong.LoginActivity">
+    <LinearLayout
+        android:layout_margin="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+
+            android:id="@+id/image_close"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/close"/>
+        <TextView
+            android:layout_marginLeft="480dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客服"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:numeric="integer"
+        android:maxLength="11"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_margin="@dimen/dp_10"
+        android:hint="用户名/邮箱/手机号"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10">
+        <EditText
+            android:id="@+id/et_password"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_forget_password"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_toRightOf="@id/et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|  忘记密码"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_margin="@dimen/dp_30"
+        android:textColor="#ffffff"
+        android:background="@drawable/radio_gray"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"/>
+
+    <RelativeLayout
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_yanzhengma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短信验证码登录"/>
+        <TextView
+            android:id="@+id/txt_regist"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新用户注册"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/image_weixin"
+            android:src="@mipmap/weixin"
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/btnAAdengru"
+            android:src="@mipmap/mqq"
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
